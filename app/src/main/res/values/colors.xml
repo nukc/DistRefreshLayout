@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="yellow_a200">#ffff00</color>
+    <color name="yellow_500">#ffeb3b</color>
+
+    <color name="amber_a200">#ffd740</color>
+    <color name="amber_500">#ffc107</color>
+
+    <color name="orange_a200">#ffab40</color>
+    <color name="orange_500">#ff9800</color>
+    <color name="orange_deep_a200">#ff6e40</color>
+    <color name="orange_deep_500">#ff5722</color>
+</resources>
