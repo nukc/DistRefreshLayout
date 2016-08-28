@@ -14,6 +14,8 @@ import com.github.nukc.distrefreshlayout.DistRefreshLayout;
 
 public class MainActivity extends AppCompatActivity {
 
+    private DistRefreshLayout mDistRefreshLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,14 +35,14 @@ public class MainActivity extends AppCompatActivity {
         SampleAdapter sampleAdapter = new SampleAdapter(this, colors);
         recyclerView.setAdapter(sampleAdapter);
 
-        final DistRefreshLayout distRefreshLayout = (DistRefreshLayout) findViewById(R.id.refreshLayout);
-        distRefreshLayout.setOnRefreshListener(new DistRefreshLayout.OnRefreshListener() {
+        mDistRefreshLayout = (DistRefreshLayout) findViewById(R.id.refreshLayout);
+        mDistRefreshLayout.setOnRefreshListener(new DistRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                distRefreshLayout.postDelayed(new Runnable() {
+                mDistRefreshLayout.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        distRefreshLayout.setRefreshing(false);
+                        mDistRefreshLayout.setRefreshing(false);
                     }
                 }, 1000);
             }
