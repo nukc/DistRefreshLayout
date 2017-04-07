@@ -4,8 +4,8 @@ apply plugin: 'com.jfrog.bintray'
 def siteUrl = 'https://github.com/nukc/DistRefreshLayout'
 def gitUrl = 'git@github.com:nukc/DistRefreshLayout.git'
 
-group = "com.github.nukc.distrefreshlayout"
-version = "0.1.0"
+group = "com.github.nukc"
+version = "0.1.1"
 
 install {
     repositories.mavenInstaller {

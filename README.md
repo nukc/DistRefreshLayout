@@ -13,7 +13,7 @@
 add the dependency:
 ```groovy
 dependencies {
-    compile 'com.github.nukc.distrefreshlayout:distrefreshlayout:0.1.0'
+    compile 'com.github.nukc:distrefreshlayout:0.1.1'
 }
 ```
 
